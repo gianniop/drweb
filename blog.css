@@ -1,0 +1,99 @@
+.blog-wrapper{
+    max-width: 1000px;
+    margin: 2rem auto 0;
+}
+.blog-wrapper .blog.card.left{
+    padding: 1rem;
+    background-color: #fff;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+
+.blog-wrapper .blog.card.left .card-image{
+    overflow: hidden;
+}
+.blog-wrapper .blog.card.left .card-image img{
+    transition: all 0.5s;
+}
+
+.blog-wrapper .blog.card.left:hover img{
+    transform: scale(1.1);
+}
+
+
+.blog-wrapper .blog.card.left .card-info{
+    padding-left: 3rem;
+}
+
+.blog-wrapper .blog.card .card-category{
+    position: relative;
+}
+
+.blog-wrapper .blog.card .card-category:after{
+    content: '';
+    position: absolute;
+    left:0;
+    top: 50%;
+    width: 100%;
+    border-top: 1px solid var(--secColor);
+}
+
+.blog-wrapper .blog.card .card-category h4{
+    background-color: var(--secColor);
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: 100;
+    display: inline-block;
+    position: relative;
+    z-index: 5;
+}
+
+.blog-wrapper .blog.card .card-title{
+    margin-bottom: auto;
+}
+.blog-wrapper .blog.card .card-title h3{
+    margin-top: 1rem;
+}
+.blog-wrapper .blog.card.left .card-more{
+    margin-top: 1rem;
+    position: relative;
+}
+.blog-wrapper .blog.card.left .card-more button{
+    margin-left: auto;
+    display: block;
+    transition: all 0.5s;
+}
+
+.blog-wrapper .blog.card.left .card-more:before{
+    content: '';
+    width: 100%;
+    border-top: 1px solid var(--mainColor);
+    top: 50%;
+    left: 0;
+    position: absolute;
+}
+
+.blog-wrapper .blog.card.left:hover .card-more button{
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 980px) {
+    .blog-wrapper .blog.card.left .card-info{
+        padding-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .blog-wrapper .blog.card.left{
+        flex-direction: column;
+    }
+    .blog-wrapper .blog.card.left .card-image{
+        width: 100%;
+    }
+    .blog-wrapper .blog.card.left .card-info{
+        padding-left: 0;
+        margin-top: 1rem;
+        width: 100%;
+    }
+}
